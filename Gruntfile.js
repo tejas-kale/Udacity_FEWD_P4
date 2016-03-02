@@ -1,3 +1,5 @@
+'use strict'
+
 // Load 'ngrok' module
 var ngrok = require('ngrok');
 

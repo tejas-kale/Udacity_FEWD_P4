@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Load 'ngrok' module
 var ngrok = require('ngrok');
@@ -73,7 +73,9 @@ module.exports = function(grunt){
         	dist: {
         		options: {
         			removeComments: true,
-        			collapseWhitespace: true
+        			collapseWhitespace: true,
+        			minifyJS: true,
+        			minifyCSS: true
         		},
         		files: [{
         			expand: true,
@@ -113,7 +115,7 @@ module.exports = function(grunt){
 	// Register task for 'ngrok'
 	grunt.registerTask('psi-ngrok', 'Run pagespeed with ngrok', function () {
 		var done = this.async();
-		var port = 8000;
+		var port = 8080;
 
 		ngrok.connect (port, function (err, url) {
 			if (err !== null) {

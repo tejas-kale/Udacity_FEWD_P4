@@ -1,10 +1,23 @@
-## Website Performance Optimization portfolio project
+# Website Performance Optimization
 
-Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
+This project is intended to demonstrate optimizations that I have learnt for declogging the Critical Rendering Path of a website and smoothing included browser animations.
 
-To get started, check out the repository, inspect the code,
+## Inspecting Performance
 
-### Getting started
+Following the structure frequently followed in web development, this project has two copies of the source code. First is the `src` (short for _source_) folder where the code rests in human-readable format. The other is `dist` (short for _distribution_) which incorporates all modifications that eliminate typical bottlenecks in the loading and rendering of a web page/application.
+
+_Grunt_, a JS task runner is used to automate the common changes required to improve the performance of a website. Its ecosystem consists of multiple plugins that can perform tasks like minification, compression, linting, etc.
+
+Basic steps for using _Grunt_ with reference to getting this project running are discussed here. For further details, please refer to the **Getting Started** guide [here](http://gruntjs.com/getting-started).
+
+While this repository comes with a `dist` version of the source code which has been created using _Grunt_, a 're-grunting' is suggested with the following steps:
+
+1. If not already available, download the relevant `npm` installer from [here](https://nodejs.org/en/download/). [Note: `npm` is best acquired as part of the `Node.js` bundle whose installer has been linked.]
+2. Open a terminal/CMD prompt and install _Grunt_ by keying in:
+```
+npm install -g grunt-cli
+```
+3.
 
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
@@ -32,7 +45,7 @@ Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
 
 ####Part 2: Optimize Frames per Second in pizza.html
 
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
+To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 

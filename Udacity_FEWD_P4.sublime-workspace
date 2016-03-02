@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"randomPizza",
+				"randomPizzaContainers"
+			],
+			[
+				"rando",
+				"randomPizzaContainers"
+			],
+			[
+				"randomPi",
+				"randomPizzaContainer"
+			],
+			[
+				"quer",
+				"querySelectorAll"
+			],
+			[
+				"scrol",
+				"scrolltop_factor"
+			],
+			[
 				"iden",
 				"identical_pos"
 			],
@@ -146,10 +166,6 @@
 			[
 				"cou",
 				"corpus_file"
-			],
-			[
-				"rando",
-				"random_string"
 			],
 			[
 				"file_size",
@@ -439,6 +455,30 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "views/pizza.html",
+			"settings":
+			{
+				"buffer_size": 5509,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/js/main.js",
+			"settings":
+			{
+				"buffer_size": 23566,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/css/style.css",
+			"settings":
+			{
+				"buffer_size": 690,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -485,6 +525,17 @@
 	},
 	"file_history":
 	[
+		"/F/Code/HTML/Udacity_FEWD_P4/js/perfmatters.js",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/style.css",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/print.min.css",
+		"/F/Code/HTML/Udacity_FEWD_P4/index.org.html",
+		"/F/Code/HTML/Udacity_FEWD_P4/index.html",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/smartphone.min.css",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/style.min.css",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/smartphone.css",
+		"/F/Code/Python/Optimize_Website/compress_images.py",
+		"/F/Code/HTML/Udacity_FEWD_P4/css/print.css",
+		"/F/Code/HTML/Udacity_FEWD_P4/document_write.html",
 		"/F/Code/Python/FOBOS/Test_Data/Data_Generator/text_lorem/text_25mb/text_1/text_25600kb_29",
 		"/F/Code/Python/FOBOS/duplicate_finder_naive.py",
 		"/F/Code/Python/FOBOS/duplicate_finder_exppass.py",
@@ -601,22 +652,11 @@
 		"/C/Users/tejas.k/OneDrive/Personal/Code/C/Study/prog3.c",
 		"/C/Users/tejas.k/OneDrive/Personal/Code/C/Study/prog1.c",
 		"/C/Users/tejas.k/OneDrive/Personal/Documents/People/Sonam/Sonam_chits.txt",
-		"//CUMUPUNWS41/Users/ruchi.j/Documents/R_packages/RTsample/R/one_sample_test.R",
-		"/E/MARS/Rel_MARS_HA_30/megha/app/modules/vmware/runtime/conf/ResourceDef.xml",
-		"/C/Users/tejas.k/Downloads/minal_rextscript",
-		"/C/Users/tejas.k/Downloads/shashank_grouprollup.txt",
-		"/C/Users/tejas.k/Downloads/shashank_resrollup.txt",
-		"/E/MARS/Rel_MARS_HA_30/megha/app/platform/server/runtime/share/manip_data.R",
-		"/E/MARS/Rel_MARS_HA_30/megha/app/platform/server/runtime/share/get_loess_baseline.R",
-		"/E/MARS/Rel_MARS_HA_30/megha/app/platform/server/src/com/cs/core/ext/r/RScriptInterface.java",
-		"/C/Users/tejas.k/OneDrive/Personal/Projects/Pratik_Website/Actual/css/pd_homepage.css",
-		"/C/Users/tejas.k/OneDrive/Personal/Projects/Pratik_Website/Actual/index_orig.html",
-		"/C/Users/tejas.k/OneDrive/Personal/Projects/Pratik_Website/Actual/index.html",
-		"/C/Users/tejas.k/OneDrive/Personal/Documents/CV/LaTeX/CV.tex"
+		"//CUMUPUNWS41/Users/ruchi.j/Documents/R_packages/RTsample/R/one_sample_test.R"
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
@@ -630,6 +670,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"frame",
+			"movingPizzas",
+			"mover",
+			"randomPizzas",
 			"words",
 			"range",
 			")",
@@ -701,8 +745,93 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "views/pizza.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5509,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								23263,
+								23263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 11194.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "views/css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 690,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": -0.0,
+						"translation.y": 374.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

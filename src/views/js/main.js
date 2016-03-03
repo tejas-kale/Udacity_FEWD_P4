@@ -433,8 +433,12 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+// PO: Since we are going to add divs of class 'randomPizzaContainer' to the same div (of class 'randomPizzas'),
+// PO: the latter is stored in a variable before the loop begins.
+var pizzasDiv = document.getElementById("randomPizzas");
+
 for (var i = 2; i < 100; i++) {
-	var pizzasDiv = document.getElementById("randomPizzas");
+	// var pizzasDiv = document.getElementById("randomPizzas");
 	pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -466,17 +470,19 @@ function updatePositions() {
 	frame++;
 	window.performance.mark("mark_start_frame");
 
-	// PO: 'scrollTop' value captured as a variable for using inside 'for' loop
-	var scrollTopFactor = document.body.scrollTop / 1250;
+	var phase = [];
+	// PO: [Updated based on instructor feedback] Since the 'scrollTop' value of HTML body does not change 
+	// PO: with every iteration, its value can be determined outside the loop. Also, the (i % 5) section
+	// PO: can only take 4 possible values (0, 1, 2, 3, 4) and computing it in every iteration is
+	// PO: not advisable. Thus, this new 'for' loop efficiently takes care of phase calculations.
+	for (var i = 0; i < 5; i++) {
+		phase.push(Math.sin((document.body.scrollTop / 1250 + i)) * 100);
+	}
 
 	var items = document.querySelectorAll('.mover');
-	for (var i = 0; i < items.length; i++) {
-		// PO: Since the 'scrollTop' value of HTML body does not change with every iteration, its value is extracted 
-		// PO: and stored as a variable and used here
+	for (var j = 0; j < items.length; j++) {
 		// var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-		var phase = Math.sin(scrollTopFactor + (i % 5));
-
-		items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
+		items[j].style.left = items[j].basicLeft + phase[j % 5] + 'px';
 	}
 
 	// User Timing API to the rescue again. Seriously, it's worth learning.
@@ -499,6 +505,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	// PO: Avoid creating 'elem' objects in every iteration
 	var elem;
+
+	// PO: Rather than generating 200 pizza objects, we compute how many will be sufficient for the screen
+	// PO: on which the page is being viewed. Since there are 8 pizzas in every row and each pizza has a 
+	// PO: height of 256px, the number of pizzas required will be 8 times the division of window height 
+	// PO: by 256.
+	var windowHeight = window.innerHeight;
+	var numPizzas = 8 * Math.ceil(windowHeight / 256);
 
 	for (var i = 0; i < 200; i++) {
 		elem = document.createElement('img');

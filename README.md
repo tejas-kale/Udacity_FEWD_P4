@@ -4,17 +4,17 @@ This project is intended to demonstrate optimizations that I have learnt for dec
 
 ## Inspecting Performance
 
-Following the structure frequently followed in web development, this project has two copies of the source code. First is the `src` (short for _source_) folder where the code rests in human-readable format. The other is `dist` (short for _distribution_) which incorporates all modifications that eliminate typical bottlenecks in the loading and rendering of a web page/application.
+Following the structure frequently seen in web development, this project has two copies of the source code. First is the `src` (short for _source_) folder where the code rests in human-readable format. The other is `dist` (short for _distribution_) which incorporates all modifications that eliminate typical bottlenecks in the loading and rendering of a web page/application.
 
 _Grunt_, a JS task runner is used to automate the common changes required to improve the performance of a website. Its ecosystem consists of multiple plugins that can perform tasks like minification, compression, linting, etc.
 
-Basic steps for using Grunt with reference to getting this project running are discussed here. For further details, please refer to the **Getting Started** guide [here](http://gruntjs.com/getting-started).
+Basic steps for using Grunt with reference to getting this project running are discussed here. For further details, please refer to Grunt's official [Getting Started](http://gruntjs.com/getting-started) guide..
 
-This repository comes with a `dist` version of the source code which has been created using _Grunt_. If you wish to evaluate this version, follow only those steps that have been _italicized_. If you wish to 're-grunt' the project before evaluation, run through all the following steps:
+The `dist` version of the source code has been created using _Grunt_. If you wish to evaluate this version, follow only those steps that have been _italicized_. If you wish to 're-grunt' the project before evaluation, run through all the following steps:
 
 1. _Download the ZIP of this project and extract it._
 2. If not already available, download the relevant `npm` installer from [here](https://nodejs.org/en/download/). [Note: `npm` is best acquired as part of the `Node.js` bundle whose installer has been linked.]
-2. Open a terminal/CMD prompt and install Grunt by keying in:
+3. Open a terminal/CMD prompt and install Grunt by keying in:
 ```
 npm install -g grunt-cli
 ```

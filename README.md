@@ -16,43 +16,31 @@ The `dist` version of the source code has been created using _Grunt_. If you wis
 2. If not already available, download the relevant `npm` installer from [here](https://nodejs.org/en/download/). [Note: `npm` is best acquired as part of the `Node.js` bundle whose installer has been linked.]
 3. Open a terminal/CMD prompt and install Grunt by keying in:
 
-        ```
         npm install -g grunt-cli
-        ```
 4. _Start/restart the terminal/CMD prompt and navigate to the directory where the ZIP downloaded above was extracted._
 5. Copy the file `pizzeria.jpg` from the directory `<ZIP_location>/views/images` to some other location, say Desktop. This step is required because, based on the discussion on [this](https://discussions.udacity.com/t/grunt-contrib-imagemin-plugin-not-optimizing-images/35478) thread, there seems to be some corruption in this image file that Grunt's `imagemin` plugin cannot handle. So this image, which has been compressed using some other software, will be placed back in its location after 'grunting'.
 6. Run the following command:
 
-        ```
         grunt --force -v
-        ```
 The `--force` compels Grunt to complete all its tasks regardless of whether one or more of them fail. `-v` is for being verbose with the results of grunting.
 7. Now copy back `pizzeria.jpg` to `<ZIP_location>/views/images'.
 8. In addition to the image issue, checks with Google Pagespeed with `ngrok` will fail due to a bug in the latter which has been discussed in detail [here](https://github.com/inconshreveable/ngrok/issues/243).
 9. _Start a simple server entering the following in terminal/prompt:_
 
-        ```
         python -m SimpleHTTPServer 8080
-        ```
 _Note: For Windows users, if Python is not installed, steps to acquire and install it are detailed [here](http://docs.python-guide.org/en/latest/starting/install/win/)._
 10. _Download and install the appropriate `ngrok` from [this](https://ngrok.com/download) link._
 11. _Open a new terminal/CMD prompt instance and key in:_
 
-        ```
         ngrok http 8080
-        ```
 _This will give out a public link to the running server under the property *Forwarding* (http). Copy the link._
 12. _Open a web browser and visit Google Pagespeed Insights:_
 
-        ```
         https://developers.google.com/speed/pagespeed/insights/
-        ```
 _Enter the copied URL and hit *Analyze*. A desktop and mobile score of 95 and 94 out of 100 is expected._
 13. _To examine rendering improvements, visit the following link and investigate its timeline and the browser console._
 
-        ```
         localhost:8080/views/pizza.html
-        ```
 
 ## Enhancements in Brief
 

@@ -28,7 +28,6 @@ The `dist` version of the source code has been created using _Grunt_. If you wis
 
         grunt --force -v
 The `--force` compels Grunt to complete all its tasks regardless of whether one or more of them fail. `-v` is for being verbose with the results of grunting.
-Note: Based on the discussion on [this](https://discussions.udacity.com/t/grunt-contrib-imagemin-plugin-not-optimizing-images/35478) thread, there seemed to be some issue with the `pizzeria.jpg` supplied in the original repository that Grunt's `imagemin` plugin was unable to handle. Thus, the image in this project in a compressed version of the original whose size has been reduced using an online tool.
 8. In addition to the image issue, checks with Google Pagespeed with `ngrok` will fail due to a bug in the latter which has been discussed in detail [here](https://github.com/inconshreveable/ngrok/issues/243).
 9. _Start a simple server by entering the following in terminal/prompt:_
 
@@ -46,6 +45,8 @@ _Enter the copied URL and hit 'Analyze'. A desktop and mobile score of 95 and 91
 13. _To examine rendering improvements, visit the following link and investigate its timeline and the browser console._
 
         localhost:8080/views/pizza.html
+
+_Note: Based on the discussion on [this](https://discussions.udacity.com/t/grunt-contrib-imagemin-plugin-not-optimizing-images/35478) thread, there seemed to be some issue with the `pizzeria.jpg` supplied in the original repository that Grunt's `imagemin` plugin was unable to handle. Thus, the image in this project in a compressed version of the original whose size has been reduced using an online tool._
 
 ## Enhancements in Brief
 

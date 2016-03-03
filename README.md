@@ -15,9 +15,10 @@ The `dist` version of the source code has been created using _Grunt_. If you wis
 1. _Download the ZIP of this project and extract it._
 2. If not already available, download the relevant `npm` installer from [here](https://nodejs.org/en/download/). [Note: `npm` is best acquired as part of the `Node.js` bundle whose installer has been linked.]
 3. Open a terminal/CMD prompt and install Grunt by keying in:
-```
-npm install -g grunt-cli
-```
+
+        ```
+        npm install -g grunt-cli
+        ```
 4. _Start/restart the terminal/CMD prompt and navigate to the directory where the ZIP downloaded above was extracted._
 5. Copy the file `pizzeria.jpg` from the directory `<ZIP_location>/views/images` to some other location, say Desktop. This step is required because, based on the discussion on [this](https://discussions.udacity.com/t/grunt-contrib-imagemin-plugin-not-optimizing-images/35478) thread, there seems to be some corruption in this image file that Grunt's `imagemin` plugin cannot handle. So this image, which has been compressed using some other software, will be placed back in its location after 'grunting'.
 6. Run the following command:

@@ -23,9 +23,9 @@ The `dist` version of the source code has been created using _Grunt_. If you wis
 
         grunt --force -v
 The `--force` compels Grunt to complete all its tasks regardless of whether one or more of them fail. `-v` is for being verbose with the results of grunting.
-7. Now copy back `pizzeria.jpg` to `<ZIP_location>/views/images'.
+7. Now copy back `pizzeria.jpg` to `<ZIP_location>/views/images`.
 8. In addition to the image issue, checks with Google Pagespeed with `ngrok` will fail due to a bug in the latter which has been discussed in detail [here](https://github.com/inconshreveable/ngrok/issues/243).
-9. _Start a simple server entering the following in terminal/prompt:_
+9. _Start a simple server by entering the following in terminal/prompt:_
 
         python -m SimpleHTTPServer 8080
 _Note: For Windows users, if Python is not installed, steps to acquire and install it are detailed [here](http://docs.python-guide.org/en/latest/starting/install/win/)._
@@ -33,11 +33,11 @@ _Note: For Windows users, if Python is not installed, steps to acquire and insta
 11. _Open a new terminal/CMD prompt instance and key in:_
 
         ngrok http 8080
-_This will give out a public link to the running server under the property *Forwarding* (http). Copy the link._
+_This will give out a public link to the running server under the property 'Forwarding' (http). Copy the link._
 12. _Open a web browser and visit Google Pagespeed Insights:_
 
         https://developers.google.com/speed/pagespeed/insights/
-_Enter the copied URL and hit *Analyze*. A desktop and mobile score of 95 and 94 out of 100 is expected._
+_Enter the copied URL and hit 'Analyze'. A desktop and mobile score of 95 and 94 respectively out of 100 is expected._
 13. _To examine rendering improvements, visit the following link and investigate its timeline and the browser console._
 
         localhost:8080/views/pizza.html
@@ -48,19 +48,19 @@ _Enter the copied URL and hit *Analyze*. A desktop and mobile score of 95 and 94
 
 - Minified all HTML, CSS, and JS files using Grunt (`htmlmin`, `cssmin`, and `uglify` respectively).
 - Reduced image sizes using Grunt (`imagemin`) and online tools.
-- Placed styles relating to printing in a separate file called `print.css`.
+- Placed styles related to printing in a separate file called `print.css`.
 - Ensured that print styles do not block DOM rendering by adding the attribute `media=print` in its `link` tag.
 - Moved remaining CSS to HTML as these styles are only used by `index.html`.
 
 ### Cam's Pizzeria
 
-_Note: All modifications are in the file `dist/views/js/main.js`_
+_Note: Modifications are made to the files `dist/views/js/main.js` and `dist/views/css/style.css`_
 
 - Pizza sizes, which can be toggled between Small, Medium, and Large, are set in percentage rather than absolute pixel values.
 - While updating positions of background pizzas, the HTML `body` attribute called `scrollTop` is extracted before the loop for updation begins.
-- When background pizzas are added for the first time, their position is set as part of the constructor function rather than calling `updatePositions`.
+- When background pizzas are added for the first time, their position is set as part of the constructor function rather than calling `updatePositions()`.
 - Styles shared by background pizzas are defined in the `style.css` file rather than the constructor function.
-- As background pizzas are the only bits that are animated while scrolling, they are suggested for a separate layer to the browser by adding the `will-change: transform;` property to their class.
+- As background pizzas are the only bits that are animated while scrolling, they are suggested to the browser for a separate layer by adding the `will-change: transform;` property to their class.
 
 ## Contact
 

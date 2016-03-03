@@ -511,9 +511,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	// PO: height of 256px, the number of pizzas required will be 8 times the division of window height 
 	// PO: by 256.
 	var windowHeight = window.innerHeight;
-	var numPizzas = 8 * Math.ceil(windowHeight / 256);
+	var numPizzas = cols * Math.ceil(windowHeight / s);
 
-	for (var i = 0; i < 200; i++) {
+	for (var i = 0; i < numPizzas; i++) {
 		elem = document.createElement('img');
 		elem.className = 'mover';
 		elem.src = "images/pizza.png";
